@@ -1,0 +1,63 @@
+body
+{
+    background-color: EFFFFD;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    text-align: center;
+    font-size: 48px;
+}
+
+a{
+    color:blue;
+    font-size: 24px;
+    align-items: center;
+}
+a:hover{
+    color: red;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    color: 42C2FF;
+    text-align: center;
+    font-size: 24px;
+}
+p{
+    font-weight: bold;
+    text-align: center;
+}
+ol{
+    max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+  }
+  ol li::before {
+    content: counter(my-awesome-counter);
+    color: #fcd000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    transform: rotate(-10deg);
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999;
+  }
